@@ -13,8 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
- 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 $(call inherit-product, vendor/lenovo/a6000/a6000-vendor.mk)
 
@@ -128,7 +126,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    SnapdragonCamera
+
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.cpp.duplication=false \
